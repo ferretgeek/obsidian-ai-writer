@@ -1,35 +1,16 @@
-<div align="center">
-
 # Obsidian AI writer
 
-[中文](./README.md) · English
+[中文](README.md) · English
 
-[![CI](https://github.com/ferretgeek/obsidian-ai-writer/actions/workflows/ci.yml/badge.svg)](https://github.com/ferretgeek/obsidian-ai-writer/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/ferretgeek/obsidian-ai-writer/actions/workflows/codeql.yml/badge.svg)](https://github.com/ferretgeek/obsidian-ai-writer/actions/workflows/codeql.yml)
-[![MIT](https://img.shields.io/badge/license-MIT-3f8268.svg)](./LICENSE)
-[![Obsidian](https://img.shields.io/badge/Obsidian-1.8.7%2B-7c5ce7.svg)](https://obsidian.md/)
+Use AI inside Obsidian to organize, polish, and edit notes. You choose the notes, text, or images for each conversation, then review a before-and-after diff and confirm before edits are saved.
 
-[Live demo](https://ferretgeek.github.io/obsidian-ai-writer/) · [Privacy](./docs/PRIVACY.md) · [Installation](./docs/DEPLOYMENT.md)
+**Requirements:** Desktop Obsidian 1.8.7+ and your own AI endpoint and key, or a running local Ollama instance. When you use a remote model, your selected and submitted content is sent to that provider.
 
-</div>
+[View the demo](https://ferretgeek.github.io/obsidian-ai-writer/) · [Install the plugin](#installation) · [Model setup and deployment](docs/DEPLOYMENT_EN.md)
 
-![Interface preview](./docs/images/dashboard.png)
+## Interface
 
-> Chat with a model over the notes *you* picked. Whatever it wants to change, you see first.
-
-## Why this exists
-
-Most AI note plugins do two things that make them hard to trust.
-
-**They read your whole vault.** You wanted to talk about today's meeting note, and three years of journals, financial tables, and private lists went along as context.
-
-**They edit your files directly.** You asked it to tidy up a paragraph and came back to a rewritten note with no diff to review.
-
-This plugin inverts both.
-
-**You choose the context.** These notes, this tag, this selection, this image — every item is listed beside the conversation and can be removed at any time. **It never scans the vault.**
-
-**Write-back has a gate.** Insert, append, overwrite, create, and multi-file edits all show a diff first and only land after you confirm. Mistakes are undoable, and deletions go to Obsidian's trash rather than being destroyed.
+![Interface preview](docs/images/dashboard.png)
 
 ## What it does
 

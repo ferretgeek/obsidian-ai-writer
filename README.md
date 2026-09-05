@@ -1,35 +1,16 @@
-<div align="center">
-
 # Obsidian AI 写作助手
 
-中文 · [English](./README_EN.md)
+中文 · [English](README_EN.md)
 
-[![CI](https://github.com/ferretgeek/obsidian-ai-writer/actions/workflows/ci.yml/badge.svg)](https://github.com/ferretgeek/obsidian-ai-writer/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/ferretgeek/obsidian-ai-writer/actions/workflows/codeql.yml/badge.svg)](https://github.com/ferretgeek/obsidian-ai-writer/actions/workflows/codeql.yml)
-[![MIT](https://img.shields.io/badge/license-MIT-3f8268.svg)](./LICENSE)
-[![Obsidian](https://img.shields.io/badge/Obsidian-1.8.7%2B-7c5ce7.svg)](https://obsidian.md/)
+在 Obsidian 里让 AI 帮你整理、润色和修改笔记。你选择本轮要用的笔记、文字或图片，修改先显示前后对比，确认后再保存。
 
-[在线演示](https://ferretgeek.github.io/obsidian-ai-writer/) · [隐私边界](./docs/PRIVACY.md) · [安装与部署](./docs/DEPLOYMENT.md)
+**使用前提：** 桌面版 Obsidian 1.8.7+，以及你自己的 AI 接口与密钥，或已运行的本地 Ollama。使用远程模型时，你选定并发送的内容会交给该服务商处理。
 
-</div>
+[查看演示](https://ferretgeek.github.io/obsidian-ai-writer/) · [安装插件](#安装) · [模型配置与部署](docs/DEPLOYMENT.md)
 
-![界面预览](./docs/images/dashboard.png)
+## 界面
 
-> 就着你指定的那几篇笔记和 AI 聊。它想改什么，先给你看。
-
-## 为什么会需要它
-
-大部分 AI 笔记插件有两个让人不敢用的地方：
-
-**一是它读了你整个库。** 你只想聊今天这篇会议记录，它把三年的日记、财务表格和私人清单一起当成了上下文。
-
-**二是它直接改了你的文件。** 你说"帮我理一下这段"，回头发现整篇被重写了，而且没有 diff 可看。
-
-这个插件反过来做。
-
-**上下文是你挑的。** 这几篇笔记、这个标签、这段选中的文字、这张图——每一项都列在对话旁边，随时能删掉。**它不会扫描整个 Vault。**
-
-**写回有一道门。** 插入、追加、覆盖、新建、多文件修改，都先给你一份 diff，确认了才落盘。改错了能撤销，删除只进 Obsidian 废纸篓，不做永久删除。
+![界面预览](docs/images/dashboard.png)
 
 ## 它能做什么
 
